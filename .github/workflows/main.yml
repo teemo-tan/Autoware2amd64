@@ -35,7 +35,7 @@ jobs:
       - name: Pull, Tag and Push
         run: |
           # 依然使用最稳妥的 latest-cuda，一旦成功你可以随意换 tag
-          SOURCE_IMAGE="docker pull ghcr.io/autowarefoundation/autoware:universe-sensing-perception-devel-cuda-20260109@sha256:ed6f5ce2c185d0efead486bb49475736556613658d848f9d83038105906b8d79"
+          SOURCE_IMAGE="ghcr.io/autowarefoundation/autoware:universe-sensing-perception-devel-cuda-20260109@sha256:ed6f5ce2c185d0efead486bb49475736556613658d848f9d83038105906b8d79"
           TARGET_IMAGE="crpi-d3y3qro9com2p9eo.cn-hangzhou.personal.cr.aliyuncs.com/my-autoware-jocker/autoware2amd64:20260109"
           
           echo "Step 1: Pulling from GHCR (Authenticated)..."
